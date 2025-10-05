@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* in your global CSS or a module */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* vertical scrollbar thickness */
+  height: 8px; /* horizontal scrollbar thickness */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* For Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.1);
+}
